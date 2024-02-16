@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Form</title>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Contact form</legend>
+          <fieldset>
+            <legend>Personal information</legend>
+            <p>
+              <label for="firstName"> Firstname :</label>
+              <input type="text" id="firstName" name="firstName" autofocus placeholder="enter your name"/>
+            </p>
+            <p>
+              <label for="lastName"> Last Name:</label>
+              <input type="text" id="lastName" placeholder="enter your last name" name="lastName" />
+            </p>
+            <p>
+              <label for="phone">Phone:</label>
+              <input type="tel" name="phone" placeholder="1000000" id="phone" />
+            </p>
+            <p>
+              <label for="favoriteDecade">year born:</label>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                min="2003"
+                max="2009"
+              />
+            </p>
+            <p>
+              <label for="favoriteCity">Your city:</label>
+              <select name="city" id="city">
+                <optgroup label="Maharastra">
+                  <option value="nagpur">Nagpur</option>
+                  <option value="satara">Satara</option>
+                  <option value="mumbai">Mumbai</option>
+                </optgroup>
+                <optgroup label="India">
+                  <option value="delhi">Delhi</option>
+                  <option value="goa">Goa</option>
+                </optgroup>
+              </select>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Send me a note</legend>
+            <p>message me</p>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="message me"></textarea>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
